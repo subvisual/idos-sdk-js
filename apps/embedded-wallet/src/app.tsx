@@ -10,9 +10,9 @@ function WalletConnector() {
     return (
       <>
         <EVMConnector />
-        <NearConnector />
+        {/* <NearConnector />
         <XRPLConnector />
-        <StellarConnector />
+        <StellarConnector /> */}
       </>
     );
   }
@@ -60,7 +60,7 @@ export function App() {
                 disconnect: undefined,
               },
             },
-            import.meta.env.VITE_DATA_DASHBOARD_URL,
+            import.meta.env.VITE_DATA_DASHBOARD_URL
           );
 
           // Close the popup window after sending the data
